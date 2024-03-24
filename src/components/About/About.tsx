@@ -21,16 +21,12 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Kamran, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and React, I have the tools to bring any website vision to life.
+          Welcome to the Digital Playground! I'm Kamran, your go-to maestro of web development magic. With a powerhouse toolkit boasting HTML, CSS, JavaScript, React, Next.js, TypeScript, Node.js, Express.js, ReduxToolkit and more, I'm geared up to transform your online dreams into captivating realities. Let's sculpt your unique online identity, blending innovation with seamless functionality. Elevate your digital presence with me at the helm, where creativity meets cutting-edge technology.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-          <p>
-            But my services go beyond just custom development - I'm also proficient in using CMS systems like WordPress and Shopify, making it easy for my clients to take control of their own websites and keep them up to date.</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
-          <p>
-            So if you're in need of a new website or just looking to revamp your current online presence, I'd love to chat and see how I can help. Let's bring your website dreams to reality together!</p>
+        <p>
+          Ready to Transform Your Online Presence? Whether it's crafting a brand-new website or giving your current one a stunning makeover, I'm here to turn your vision into a digital masterpiece. Let's collaborate and breathe life into your website dreams! Get in touch today, and let's embark on this exciting journey together towards online success!</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <h3>Here are my main skills:</h3>
