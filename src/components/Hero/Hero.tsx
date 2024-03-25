@@ -7,7 +7,6 @@ import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github.svg'
 import whatsapp from '../../assets/whatsapp.svg'
 import Hello from '../../assets/Hello.gif'
-import telegram from '../../assets/telegram.svg'
 export function Hero() {
   return (
     <Container id="home">
@@ -51,13 +50,6 @@ export function Hero() {
         >
           <img src={whatsapp} alt="Whatsapp" />
         </a>
-        {/* <a
-          href="https://t.me/CodeVinayak"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={telegram} alt="telegram" />
-        </a> */}
         </div>
         </ScrollAnimation>
       </div>
