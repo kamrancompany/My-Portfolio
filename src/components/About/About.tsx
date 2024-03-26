@@ -21,7 +21,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-          Welcome to the Digital Playground! I'm Kamran, your go-to maestro of web development magic. With a powerhouse toolkit boasting HTML, CSS, JavaScript, React, Next.js, TypeScript, Node.js, Express.js, ReduxToolkit and more, I'm geared up to transform your online dreams into captivating realities. Let's sculpt your unique online identity, blending innovation with seamless functionality. Elevate your digital presence with me at the helm, where creativity meets cutting-edge technology.
+          Welcome to the Digital Playground! I'm Kamran, your go-to maestro of web development magic. With a powerhouse toolkit boasting HTML, CSS, JavaScript, React, Next.js, TypeScript, Node.js, Express.js, Mongo db, ReduxToolkit and more, I'm geared up to transform your online dreams into captivating realities. Let's sculpt your unique online identity, blending innovation with seamless functionality. Elevate your digital presence with me at the helm, where creativity meets cutting-edge technology.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
