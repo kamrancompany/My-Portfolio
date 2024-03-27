@@ -22,12 +22,12 @@ export function About() {
           <h2>About me</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
-          <p>
-          Welcome to the Digital Playground! I'm Kamran, your go-to maestro of web development magic. With a powerhouse toolkit boasting HTML, CSS, JavaScript, React, Next.js, TypeScript, Node.js, Express.js, Mongo db, ReduxToolkit and more, I'm geared up to transform your online dreams into captivating realities. Let's sculpt your unique online identity, blending innovation with seamless functionality. Elevate your digital presence with me at the helm, where creativity meets cutting-edge technology.
+          <p className="about-para">
+          Welcome to the Digital Playground! I'm Kamran, your go-to maestro of web development magic. With a powerhouse toolkit boasting <span className="skill-span">HTML, CSS, JavaScript, React, Next.js, TypeScript, Node.js, Express.js, Mongo db, ReduxToolkit </span> and more, I'm geared up to transform your online dreams into captivating realities. Let's sculpt your unique online identity, blending innovation with seamless functionality. Elevate your digital presence with me at the helm, where creativity meets cutting-edge technology.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-        <p>
+        <p className="about-para">
           Ready to Transform Your Online Presence? Whether it's crafting a brand-new website or giving your current one a stunning makeover, I'm here to turn your vision into a digital masterpiece. Let's collaborate and breathe life into your website dreams! Get in touch today, and let's embark on this exciting journey together towards online success!</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
