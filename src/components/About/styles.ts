@@ -41,8 +41,12 @@ export const Container = styled.section`
     letter-spacing: 0.1rem;
     font-weight: 500;
   }
-  
-  
+  .about-para{
+    text-align: justify;
+  }
+  .skill-span{
+    color: var(--green);
+  }
 
   .about-image{
     text-align: center;
