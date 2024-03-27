@@ -47,10 +47,10 @@ export const Container = styled.section`
   .about-image{
     text-align: center;
    img{
-     margin-top: 2rem;
+     margin-top: 4rem;
      width: 60%;
      height: 60%;
-     border-radius:50%;
+     border-radius:15px;
      filter: grayscale(0);
      transition: filter 0.5s;
      &:hover{
