@@ -10,6 +10,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.8rem;
   }
   .hability{
