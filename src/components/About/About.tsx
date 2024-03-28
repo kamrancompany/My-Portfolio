@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Container } from "./styles";
 import kamran from "../../assets/kamran.jpg";
 import mongodb from "../../assets/mongodb.svg"
@@ -15,6 +16,15 @@ import tailwind from "../../assets/tailwind-css.svg"
 import ScrollAnimation from "react-animate-on-scroll";
 
 export function About() {
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
+
+  const handleMouseEnter = (skill: string) => {
+    setHoveredSkill(skill);
+  }
+
+  const handleMouseLeave = () => {
+    setHoveredSkill(null);
+  }
   return (
     <Container id="about">
       <div className="about-text">
@@ -34,11 +44,17 @@ export function About() {
           <h3>Here are my main skills:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-              <img src={mongodb} alt="shopify" />
-            </ScrollAnimation>
-          </div>
+        <div className="hability" onMouseEnter={() => handleMouseEnter("MongoDB")} onMouseLeave={() => handleMouseLeave()}>
+          <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
+            <img src={mongodb} alt="MongoDB" />
+          </ScrollAnimation>
+          {hoveredSkill === "MongoDB" && (
+            <div className="card">
+              <h3>MongoDB</h3>
+              <hr />
+            </div>
+          )}
+        </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
               <img src={reactIcon} alt="React" />
