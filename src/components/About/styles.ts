@@ -25,6 +25,7 @@ export const Container = styled.section`
   .card{
     background:white;
     border-radius: 12px;
+    height:8rem;
   }
 
   h2{
@@ -41,6 +42,8 @@ export const Container = styled.section`
     color: var(--green);
   }
   h5{
+    display:flex;
+    justify-content:center;
     color: var(--green);
   }
   p{

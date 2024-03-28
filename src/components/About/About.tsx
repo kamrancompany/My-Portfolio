@@ -50,7 +50,9 @@ export function About() {
               <div className="card" onMouseLeave={() => handleMouseLeave()}>
                 <img src={mongodb} alt="MongoDB" style={{height:"40px", width:"80px"}} />
                 <h5>MongoDB</h5>
-                <hr />
+                <div style={{height:"5px", width:"90%",marginLeft:"5%",background:"black",borderRadius:"5px"}}>
+                  <span style={{}}></span>
+                </div>
               </div>
             ) : (
               <img src={mongodb} alt="MongoDB" onMouseEnter={() => handleMouseEnter("MongoDB")} />
