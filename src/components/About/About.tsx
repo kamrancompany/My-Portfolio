@@ -44,16 +44,18 @@ export function About() {
           <h3>Here are my main skills:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
-        <div className="hability" onMouseEnter={() => handleMouseEnter("MongoDB")} onMouseLeave={() => handleMouseLeave()}>
+        <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-            <img src={mongodb} alt="MongoDB" />
+            {hoveredSkill === "MongoDB" ? (
+              <div className="card" onMouseLeave={() => handleMouseLeave()}>
+                <img src={mongodb} alt="MongoDB" style={{height:"40px", width:"80px"}} />
+                <h5>MongoDB</h5>
+                <hr />
+              </div>
+            ) : (
+              <img src={mongodb} alt="MongoDB" onMouseEnter={() => handleMouseEnter("MongoDB")} />
+            )}
           </ScrollAnimation>
-          {hoveredSkill === "MongoDB" && (
-            <div className="card">
-              <h3>MongoDB</h3>
-              <hr />
-            </div>
-          )}
         </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>

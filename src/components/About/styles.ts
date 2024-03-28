@@ -17,7 +17,7 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    cursor:pointer;
     img{
       width: 3.4rem;
     }
@@ -40,7 +40,9 @@ export const Container = styled.section`
     margin-top: 2rem;
     color: var(--green);
   }
-
+  h5{
+    color: var(--green);
+  }
   p{
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
