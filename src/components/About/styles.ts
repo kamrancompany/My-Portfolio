@@ -25,7 +25,7 @@ export const Container = styled.section`
   .card{
     background:white;
     border-radius: 12px;
-    height:8rem;
+    height:10rem;
   }
 
   h2{
@@ -73,6 +73,30 @@ export const Container = styled.section`
    }
   }
 
+  .load-bar {
+    margin-top:1rem;
+    margin-bottom:.3rem;
+    height: 5px;
+    width: 90%;
+    margin-left: 5%;
+    background: black;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 5px;
+    width: 0; /* Initially 0 width */
+    background: var(--green);
+    border-radius: 5px;
+    animation: loadAnimation 5s forwards; /* Animation duration 1 second */
+  }
+  
+  @keyframes loadAnimation {
+    100% {
+      width: 85%; /* When animation completes, width becomes 85% */
+    }
+  }
+  
   @media only screen and (max-width: 480px) {
     .about-image {
       max-width: 100%;

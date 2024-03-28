@@ -48,14 +48,39 @@ export function About() {
           <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
             {hoveredSkill === "MongoDB" ? (
               <div className="card" onMouseLeave={() => handleMouseLeave()}>
-                <img src={mongodb} alt="MongoDB" style={{height:"40px", width:"80px"}} />
+                <img src={mongodb} alt="MongoDB" style={{ height: "40px", width: "80px" }} />
                 <h5>MongoDB</h5>
-                <div style={{height:"5px", width:"90%",marginLeft:"5%",background:"black",borderRadius:"5px"}}>
-                  <span style={{}}></span>
+                <div className="load-bar">
+                  <div className="progress" />
                 </div>
+                <h5>8/10</h5>
               </div>
             ) : (
-              <img src={mongodb} alt="MongoDB" onMouseEnter={() => handleMouseEnter("MongoDB")} />
+              <img
+                src={mongodb}
+                alt="MongoDB"
+                onMouseEnter={() => handleMouseEnter("MongoDB")}
+              />
+            )}
+          </ScrollAnimation>
+        </div>
+        <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
+            {hoveredSkill === "ReactJs" ? (
+              <div className="card" onMouseLeave={() => handleMouseLeave()}>
+                <img src={reactIcon} alt="react" style={{ height: "40px", width: "80px" }} />
+                <h5>React JS</h5>
+                <div className="load-bar">
+                  <div className="progress" />
+                </div>
+                <h5>8/10</h5>
+              </div>
+            ) : (
+              <img
+                src={reactIcon}
+                alt="MongoDB"
+                onMouseEnter={() => handleMouseEnter("ReactJs")}
+              />
             )}
           </ScrollAnimation>
         </div>
