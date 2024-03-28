@@ -22,6 +22,10 @@ export const Container = styled.section`
       width: 3.4rem;
     }
   }
+  .card{
+    background:white;
+    border-radius: 12px;
+  }
 
   h2{
     display: inline-block;
