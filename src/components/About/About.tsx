@@ -19,17 +19,18 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p className="about-para">
-            Welcome to the Digital Playground! I'm Kamran, your go-to maestro of
-            web development magic. With a powerhouse toolkit boasting{" "}
+            Welcome to the Digital Playground! I'm Kamran, your digital
+            architect ready to craft immersive online & onsite experiences. With
+            a mastery of{" "}
+            <span className="skill-span">HTML, CSS, and JavaScript,</span> I
+            weave pixel-perfect designs that come alive with the power of{" "}
+            <span className="skill-span">React, Next.js, and TypeScript.</span>{" "}
+            Whether it's building dynamic interfaces or architecting robust
+            backend solutions with{" "}
             <span className="skill-span">
-              HTML, CSS, JavaScript, React, Next.js, TypeScript, Node.js,
-              Express.js, Mongo db, ReduxToolkit{" "}
+              Node.js, Express.js, and MongoDB,
             </span>{" "}
-            and more, I'm geared up to transform your online dreams into
-            captivating realities. Let's sculpt your unique online identity,
-            blending innovation with seamless functionality. Elevate your
-            digital presence with me at the helm, where creativity meets
-            cutting-edge technology.
+            I'm equipped to bring your visions to life.
           </p>
         </ScrollAnimation>
         <ScrollAnimation
@@ -38,12 +39,27 @@ export function About() {
           style={{ marginTop: "2rem", marginBottom: "2rem" }}
         >
           <p className="about-para">
-            Ready to Transform Your Online Presence? Whether it's crafting a
-            brand-new website or giving your current one a stunning makeover,
-            I'm here to turn your vision into a digital masterpiece. Let's
-            collaborate and breathe life into your website dreams! Get in touch
-            today, and let's embark on this exciting journey together towards
-            online success!
+            From remote collaborations to onsite collaborations, I seamlessly
+            blend innovation with functionality to sculpt your unique online
+            identity. Let's embark on a journey where creativity converges with
+            cutting-edge technology, elevating your digital presence to new
+            heights. Join me as we turn your online dreams into captivating
+            realities, one line of code at a time.
+          </p>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInLeft"
+          delay={0.2 * 1000}
+          style={{ marginTop: "2rem", marginBottom: "2rem" }}
+        >
+          <p className="about-para">
+            Ready to Transform Your Online Presence? Whether you're envisioning
+            a sleek, brand-new website or seeking to elevate your current one
+            with a jaw-dropping makeover, I'm your trusted partner in bringing
+            your digital vision to life. Let's collaborate and infuse vitality
+            into your website aspirations! Reach out today, and let's embark on
+            this exhilarating journey together towards onsite excellence and
+            beyond!
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
