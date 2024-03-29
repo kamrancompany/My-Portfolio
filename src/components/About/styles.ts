@@ -26,6 +26,7 @@ export const Container = styled.section`
     background:white;
     border-radius: 12px;
     height:10rem;
+    width:9rem;
   }
 
   h2{
@@ -74,7 +75,7 @@ export const Container = styled.section`
   }
 
   .load-bar {
-    margin-top:1rem;
+    margin-top:.5rem;
     margin-bottom:.3rem;
     height: 5px;
     width: 90%;
@@ -86,7 +87,7 @@ export const Container = styled.section`
   .progress {
     height: 5px;
     width: 0; /* Initially 0 width */
-    background: var(--green);
+    // background: var(--green);
     border-radius: 5px;
     animation: loadAnimation 5s forwards; /* Animation duration 1 second */
   }
