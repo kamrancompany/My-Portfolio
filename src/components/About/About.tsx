@@ -14,6 +14,7 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import tailwind from "../../assets/tailwind-css.svg"
 import ScrollAnimation from "react-animate-on-scroll";
+import { skills } from "../../constants/skills";
 
 export function About() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
@@ -44,27 +45,30 @@ export function About() {
           <h3>Here are my main skills:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
-        <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-            {hoveredSkill === "MongoDB" ? (
-              <div className="card" onMouseLeave={() => handleMouseLeave()}>
-                <img src={mongodb} alt="MongoDB" style={{ height: "40px", width: "80px" }} />
-                <h5>MongoDB</h5>
-                <div className="load-bar">
-                  <div className="progress" />
+        {skills.map((data, index) => (
+    <div key={index} className="hability">
+        <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
+            {hoveredSkill === data.hoverSkills ? (
+                <div className="card" onMouseLeave={() => handleMouseLeave()}>
+                    <img src={data.img} alt={data.heading} style={{ height: "40px", width: "80px",marginTop:"5px" }} />
+                    <h5 style={{color: data.backGround}}>{data.heading}</h5>
+                    <div className="load-bar">
+                        <div className="progress" style={{background: data.backGround}} />
+                    </div>
+                    <h5 style={{color: data.backGround}}>{data.rating}</h5>
                 </div>
-                <h5>8/10</h5>
-              </div>
             ) : (
-              <img
-                src={mongodb}
-                alt="MongoDB"
-                onMouseEnter={() => handleMouseEnter("MongoDB")}
-              />
+                <img
+                    src={data.img}
+                    alt={data.heading}
+                    onMouseEnter={() => handleMouseEnter(data.hoverSkills)}
+                />
             )}
-          </ScrollAnimation>
-        </div>
-        <div className="hability">
+        </ScrollAnimation>
+    </div>
+))}
+
+        {/* <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
             {hoveredSkill === "ReactJs" ? (
               <div className="card" onMouseLeave={() => handleMouseLeave()}>
@@ -88,13 +92,13 @@ export function About() {
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
               <img src={reactIcon} alt="React" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
               <img src={next} alt="React" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
               <img src={redux} alt="React" />
             </ScrollAnimation>
@@ -103,8 +107,8 @@ export function About() {
             <ScrollAnimation animateIn="fadeInUp" delay={0.14 * 1000}>
               <img src={typescriptIcon} alt="Typescript" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.16 * 1000}>
               <img src={nodeIcon} alt="Node" />
             </ScrollAnimation>
@@ -113,18 +117,18 @@ export function About() {
             <ScrollAnimation animateIn="fadeInUp" delay={0.16 * 1000}>
               <img src={expressjs} alt="Node" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.17 * 1000}>
               <img src={htmlIcon} alt="Html" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.18 * 1000}>
               <img src={cssIcon} alt="Css" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
               <img src={boostrapIcon} alt="bootstrap" />
             </ScrollAnimation>
@@ -138,7 +142,7 @@ export function About() {
             <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
               <img src={jsIcon} alt="JavaScript" />
             </ScrollAnimation>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="about-image">
