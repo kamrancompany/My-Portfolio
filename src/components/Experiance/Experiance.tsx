@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
 import img1011 from "../../assets/1011.jpg";
+import linkedin from "../../assets/linkedin.svg";
 export function Experiance() {
   return (
     <Container id="experiance">
@@ -27,18 +28,33 @@ export function Experiance() {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "space-between",
                   marginBottom: ".5rem",
                 }}
               >
-                <img
-                  src={img1011}
-                  style={{
-                    width: "10rem",
-                    height: "8rem",
-                    borderRadius: "12px",
-                  }}
-                />
+                <div>
+                  <img
+                    src={img1011}
+                    style={{
+                      width: "10rem",
+                      height: "8rem",
+                      borderRadius: "12px",
+                    }}
+                  />
+                </div>
+                <div className="project-links">
+                  <a
+                    href="https://www.linkedin.com/company/1011technologies/about/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="Visit site"
+                      style={{ width: "6rem", height: "6rem" }}
+                    />
+                  </a>
+                </div>
               </div>
             </header>
             <div className="body">
