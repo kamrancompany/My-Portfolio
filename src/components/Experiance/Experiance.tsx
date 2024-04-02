@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
 import img1011 from "../../assets/1011.jpg";
+import alright from "../../assets/alright.png";
 import linkedin from "../../assets/linkedin.svg";
 export function Experiance() {
   return (
@@ -45,6 +46,60 @@ export function Experiance() {
                 <div className="project-links">
                   <a
                     href="https://www.linkedin.com/company/1011technologies/about/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="Visit site"
+                      style={{ width: "6rem", height: "6rem" }}
+                    />
+                  </a>
+                </div>
+              </div>
+            </header>
+            <div className="body">
+              <h3>1011 Technologies</h3>
+              <p style={{ marginTop: "1rem" }}>
+                I join 1011 technologies software house as a MERN stack
+                developer in december 2023 and Currently i work there. I done
+                lot of project there most of them related to React and Node API.
+              </p>
+            </div>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="flipInX">
+          <div
+            className="project"
+            style={{
+              width: "33rem",
+              height: "33rem",
+              borderRadius: "12px",
+              backgroundColor: "#2b2b2b",
+              padding: "2rem",
+            }}
+          >
+            <header>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  marginBottom: ".5rem",
+                }}
+              >
+                <div>
+                  <img
+                    src={alright}
+                    style={{
+                      width: "10rem",
+                      height: "8rem",
+                      borderRadius: "12px",
+                    }}
+                  />
+                </div>
+                <div className="project-links">
+                  <a
+                    href="https://www.linkedin.com/company/alright-tech/?originalSubdomain=pk"
                     target="_blank"
                     rel="noreferrer"
                   >
