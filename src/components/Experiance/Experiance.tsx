@@ -19,7 +19,7 @@ export function Experiance() {
             className="project"
             style={{
               width: "33rem",
-              height: "33rem",
+              textAlign: "justify",
               borderRadius: "12px",
               backgroundColor: "#2b2b2b",
               padding: "2rem",
@@ -61,9 +61,13 @@ export function Experiance() {
             <div className="body">
               <h3>1011 Technologies</h3>
               <p style={{ marginTop: "1rem" }}>
-                I join 1011 technologies software house as a MERN stack
-                developer in december 2023 and Currently i work there. I done
-                lot of project there most of them related to React and Node API.
+                "I joined 1011 Technologies as a dynamic MERN stack developer in
+                December 2023, where I continue to excel today. Throughout my
+                tenure, I've spearheaded a multitude of projects, with a primary
+                emphasis on crafting innovative solutions using React and Node
+                API technologies. My contributions have consistently elevated
+                the company's standards and positioned us at the forefront of
+                technological innovation.
               </p>
             </div>
           </div>
@@ -73,8 +77,8 @@ export function Experiance() {
             className="project"
             style={{
               width: "33rem",
-              height: "33rem",
               borderRadius: "12px",
+              textAlign: "justify",
               backgroundColor: "#2b2b2b",
               padding: "2rem",
             }}
@@ -113,70 +117,18 @@ export function Experiance() {
               </div>
             </header>
             <div className="body">
-              <h3>1011 Technologies</h3>
+              <h3>AL RIGHT Tech</h3>
               <p style={{ marginTop: "1rem" }}>
-                I join 1011 technologies software house as a MERN stack
-                developer in december 2023 and Currently i work there. I done
-                lot of project there most of them related to React and Node API.
+                I embarked on my journey with Al Right Tech software house in
+                May 2023 as a proficient MERN stack developer, culminating my
+                tenure in December 2023. During my tenure, I spearheaded
+                numerous projects, with a predominant focus on React and Node
+                API development, contributing significantly to the company's
+                technological prowess.
               </p>
             </div>
           </div>
         </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-          <div
-            className="project"
-            style={{
-              width: "33rem",
-              height: "33rem",
-              borderRadius: "12px",
-              backgroundColor: "#2b2b2b",
-              padding: "2rem",
-            }}
-          >
-            <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#23ce6b "
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <div className="project-links">
-                <a
-                  href="https://madewithluv.in/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {/* <img src={externalLink} alt="Visit site" /> */}
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>MadeWithLuv - HomeDecor Site</h3>
-              <p>
-                This website sells home decor products and helps people decorate
-                their homes. It is easy to find what you need, whether it's
-                furniture or decorations. The site is useful for people who want
-                to make their homes look nice and need some help.
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>Wordpress</li>
-                <li>Woocommerce</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
         <ScrollAnimation animateIn="flipInX">
           <div
             className="project"
