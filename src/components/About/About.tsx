@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "./styles";
 import kamran from "../../assets/kamran.jpg";
+import myImg from "../../assets/myImg.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { skills } from "../../constants/skills";
 export function About() {
