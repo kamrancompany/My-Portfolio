@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
 import img1011 from "../../assets/1011.jpg";
@@ -23,6 +22,7 @@ export function Experiance() {
               borderRadius: "12px",
               backgroundColor: "#2b2b2b",
               padding: "2rem",
+              color: "white",
             }}
           >
             <header>
@@ -81,6 +81,7 @@ export function Experiance() {
               textAlign: "justify",
               backgroundColor: "#2b2b2b",
               padding: "2rem",
+              color: "white",
             }}
           >
             <header>
@@ -138,6 +139,7 @@ export function Experiance() {
               borderRadius: "12px",
               backgroundColor: "#2b2b2b",
               padding: "2rem",
+              color: "white",
             }}
           >
             <header>
