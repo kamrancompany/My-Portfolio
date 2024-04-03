@@ -22,43 +22,35 @@ export function Experiance() {
             }}
           >
             <header>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginBottom: ".5rem",
-                }}
-              >
-                <div>
+              <div>
+                <img
+                  src={img1011}
+                  style={{
+                    width: "10rem",
+                    height: "8rem",
+                    borderRadius: "12px",
+                  }}
+                />
+              </div>
+              <div className="project-links">
+                <a
+                  href="https://www.linkedin.com/company/1011technologies/about/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
-                    src={img1011}
-                    style={{
-                      width: "10rem",
-                      height: "8rem",
-                      borderRadius: "12px",
-                    }}
+                    src={linkedin}
+                    alt="Visit site"
+                    style={{ width: "6rem", height: "6rem" }}
                   />
-                </div>
-                <div className="project-links">
-                  <a
-                    href="https://www.linkedin.com/company/1011technologies/about/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={linkedin}
-                      alt="Visit site"
-                      style={{ width: "6rem", height: "6rem" }}
-                    />
-                  </a>
-                </div>
+                </a>
               </div>
             </header>
 
             <div className="body">
               <h3>1011 Technologies</h3>
               <p style={{ marginTop: "1rem" }}>
-                "I joined 1011 Technologies as a dynamic MERN stack developer in
+                I joined 1011 Technologies as a dynamic MERN stack developer in
                 December 2023, where I continue to excel today. Throughout my
                 tenure, I've spearheaded a multitude of projects, with a primary
                 emphasis on crafting innovative solutions using React and Node
@@ -74,43 +66,32 @@ export function Experiance() {
             className="project"
             style={{
               width: "33rem",
-              borderRadius: "12px",
               textAlign: "justify",
-              padding: "2rem",
-              color: "white",
             }}
           >
             <header>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginBottom: ".5rem",
-                }}
-              >
-                <div>
+              <div>
+                <img
+                  src={alright}
+                  style={{
+                    width: "10rem",
+                    height: "8rem",
+                    borderRadius: "12px",
+                  }}
+                />
+              </div>
+              <div className="project-links">
+                <a
+                  href="https://www.linkedin.com/company/alright-tech/?originalSubdomain=pk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
-                    src={alright}
-                    style={{
-                      width: "10rem",
-                      height: "8rem",
-                      borderRadius: "12px",
-                    }}
+                    src={linkedin}
+                    alt="Visit site"
+                    style={{ width: "6rem", height: "6rem" }}
                   />
-                </div>
-                <div className="project-links">
-                  <a
-                    href="https://www.linkedin.com/company/alright-tech/?originalSubdomain=pk"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={linkedin}
-                      alt="Visit site"
-                      style={{ width: "6rem", height: "6rem" }}
-                    />
-                  </a>
-                </div>
+                </a>
               </div>
             </header>
             <div className="body">
