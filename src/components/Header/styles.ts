@@ -1,95 +1,88 @@
 import styled from "styled-components";
 
-
 export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.8rem 10rem;
-  
   background-color: #21212150;
-  
   backdrop-filter: blur(6px);
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
 
-  nav{
+  nav {
     display: flex;
     align-items: center;
     gap: 1.8rem;
-    a{
-      color: #FFFF;
+    a {
+      color: #ffff;
       padding: 0.6rem;
-      font-family: 'Red Hat Display', sans-serif;
+      font-family: "Red Hat Display", sans-serif;
       font-weight: 500;
       text-transform: uppercase;
       transition: filter 0.25s;
 
-      &.button{
+      &.button {
         padding: 0.6rem 2rem;
       }
 
-      &:hover{
+      &:hover {
         filter: brightness(0.6);
       }
     }
-
   }
 
-  .menu-container{
+  .menu-container {
     cursor: pointer;
     padding: 0.6rem 0;
   }
 
-  .menu{
+  .menu {
     width: 2rem;
     height: 0.2rem;
-    background: #FFFF;
+    background: #ffff;
     position: relative;
     cursor: pointer;
     display: none;
 
-    &:before{
+    &:before {
       bottom: 0.5rem;
     }
-    &:after{
+    &:after {
       top: 0.5rem;
     }
 
-
-    &.active:before{
+    &.active:before {
       bottom: 0;
       transform: rotate(45deg);
     }
 
-    &.active:after{
+    &.active:after {
       top: 0;
       transform: rotate(135deg);
     }
 
-    &.active{
+    &.active {
       background-color: rgba(0, 0, 0, 0);
     }
-
   }
 
-  .menu:before, .menu:after {
+  .menu:before,
+  .menu:after {
     content: "";
     display: block;
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background: #FFFF;
+    background: #ffff;
     cursor: pointer;
-    transition: .6s;
+    transition: 0.6s;
   }
 
-
-  input[type=checkbox] {
+  input[type="checkbox"] {
     height: 0;
     width: 0;
     visibility: hidden;
@@ -113,15 +106,9 @@ export const Container = styled.header`
     right: 10px;
   }
 
-  @media only screen and (max-width: 800px) {
-    label {
-    position: relative;
-   }
-  }
-
   label:after {
-    content: '';
-    background: #FFF;
+    content: "";
+    background: #fff;
     width: 20px;
     height: 20px;
     -webkit-border-radius: 50%;
@@ -130,7 +117,7 @@ export const Container = styled.header`
     position: absolute;
     top: 5px;
     left: 4px;
-   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   }
 
   input:checked + label {
@@ -146,40 +133,34 @@ export const Container = styled.header`
     transform: translateX(-100%);
   }
 
-  @media (max-width: 960px){
+  @media only screen and (max-width: 960px) {
     padding: 1.8rem 3rem;
-
-    .menu{
+    .menu {
       display: block;
     }
-
     nav {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      overflow: hidden;
-      opacity: 0;
-      visibility: hidden;
+      display: flex;
       flex-direction: column;
-      justify-content: center;
+      gap: 1.8rem;
       align-items: center;
       position: fixed;
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       background: var(--blue);
-      top: 0;
+      top: 4rem; /* Adjust according to your design */
       left: 0;
+      z-index: 999;
       transition: opacity 0.25s;
       background-color: var(--green);
-
-      a.button{
-        background-color: var(--pink);
-      }
-
-      &.active{
+      opacity: 0;
+      visibility: hidden;
+      &.active {
         opacity: 1;
         visibility: visible;
       }
+      a.button {
+        background-color: var(--pink);
+      }
     }
   }
-  
-`
+`;
