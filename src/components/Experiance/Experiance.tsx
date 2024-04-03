@@ -20,7 +20,6 @@ export function Experiance() {
               width: "33rem",
               textAlign: "justify",
               borderRadius: "12px",
-              backgroundColor: "#2b2b2b",
               padding: "2rem",
               color: "white",
             }}
@@ -79,7 +78,6 @@ export function Experiance() {
               width: "33rem",
               borderRadius: "12px",
               textAlign: "justify",
-              backgroundColor: "#2b2b2b",
               padding: "2rem",
               color: "white",
             }}
@@ -137,7 +135,6 @@ export function Experiance() {
               width: "33rem",
               height: "33rem",
               borderRadius: "12px",
-              backgroundColor: "#2b2b2b",
               padding: "2rem",
               color: "white",
             }}
