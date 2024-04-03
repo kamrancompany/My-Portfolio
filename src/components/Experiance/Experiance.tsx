@@ -19,9 +19,6 @@ export function Experiance() {
             style={{
               width: "33rem",
               textAlign: "justify",
-              borderRadius: "12px",
-              padding: "2rem",
-              color: "white",
             }}
           >
             <header>
@@ -57,6 +54,7 @@ export function Experiance() {
                 </div>
               </div>
             </header>
+
             <div className="body">
               <h3>1011 Technologies</h3>
               <p style={{ marginTop: "1rem" }}>
