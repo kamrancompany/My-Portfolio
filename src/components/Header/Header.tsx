@@ -52,7 +52,7 @@ export function Header() {
             Resume
           </a>
         </nav>
-        <div
+        {/* <div
           aria-expanded={isActive ? "true" : "false"}
           aria-haspopup="true"
           aria-label={isActive ? "Close menu" : "Open menu"}
@@ -60,7 +60,7 @@ export function Header() {
           onClick={() => {
             setActive(!isActive);
           }}
-        ></div>
+        ></div> */}
       </Router>
     </Container>
   );
