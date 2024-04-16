@@ -1,68 +1,89 @@
-// import { Container } from "./styles";
 import "../Header/header.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import Resume from "../../assets/Vinayak_Kumar_Singh_Resume.pdf";
-
 export function Header() {
   const [isActive, setActive] = useState(false);
-
   function toggleTheme() {
     let html = document.getElementsByTagName("html")[0];
     html.classList.toggle("light");
   }
-
   function closeMenu() {
     setActive(false);
   }
-
   return (
-    <div className="header-fixed">
-      <Router>
-        <HashLink smooth to="#home" className="logo">
-          <span>{"<Kamran "}</span>
-          <span>{" Arshad/>"}</span>
-        </HashLink>
-        <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        />
-        <label htmlFor="switch">Toggle</label>
-        <nav className={isActive ? "active" : ""}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
-            Home
-          </NavHashLink>
-          <NavHashLink smooth to="#about" onClick={closeMenu}>
-            About me
-          </NavHashLink>
-          <NavHashLink smooth to="#experiance" onClick={closeMenu}>
-            Experience
-          </NavHashLink>
-          <NavHashLink smooth to="#project" onClick={closeMenu}>
-            Project
-          </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
-            Contact
-          </NavHashLink>
-          {/* <a href={Resume} download className="button"> */}
-          <a href="#" className="button">
-            Resume
-          </a>
-        </nav>
-        <div
-          aria-expanded={isActive ? "true" : "false"}
-          aria-haspopup="true"
-          aria-label={isActive ? "Close menu" : "Open menu"}
-          className={isActive ? "menu active" : "menu"}
-          onClick={() => {
-            setActive(!isActive);
-          }}
-        ></div>
-      </Router>
-    </div>
+    <>
+      <div className="header-fixed">
+        <Router>
+          <HashLink smooth to="#home" className="logo">
+            <span>{"<Kamran "}</span>
+            <span>{" Arshad/>"}</span>
+          </HashLink>
+          <input
+            onChange={toggleTheme}
+            className="container_toggle"
+            type="checkbox"
+            id="switch"
+            name="mode"
+          />
+          <label htmlFor="switch">Toggle</label>
+          <nav className={isActive ? "active" : ""}>
+            <NavHashLink smooth to="#home" onClick={closeMenu}>
+              Home
+            </NavHashLink>
+            <NavHashLink smooth to="#about" onClick={closeMenu}>
+              About me
+            </NavHashLink>
+            <NavHashLink smooth to="#experiance" onClick={closeMenu}>
+              Experience
+            </NavHashLink>
+            <NavHashLink smooth to="#project" onClick={closeMenu}>
+              Project
+            </NavHashLink>
+            <NavHashLink smooth to="#contact" onClick={closeMenu}>
+              Contact
+            </NavHashLink>
+            {/* <a href={Resume} download className="button"> */}
+            <a href="#" className="button">
+              Resume
+            </a>
+          </nav>
+          <div
+            aria-expanded={isActive ? "true" : "false"}
+            aria-haspopup="true"
+            aria-label={isActive ? "Close menu" : "Open menu"}
+            className={isActive ? "menu active" : "menu"}
+            onClick={() => {
+              setActive(!isActive);
+            }}
+          ></div>
+        </Router>
+      </div>
+      {isActive && (
+        <div className={`smScreenContent ${isActive ? "show" : ""}`}>
+          <Router>
+            <NavHashLink smooth to="#home" onClick={closeMenu}>
+              Home
+            </NavHashLink>
+            <NavHashLink smooth to="#about" onClick={closeMenu}>
+              About me
+            </NavHashLink>
+            <NavHashLink smooth to="#experiance" onClick={closeMenu}>
+              Experience
+            </NavHashLink>
+            <NavHashLink smooth to="#project" onClick={closeMenu}>
+              Project
+            </NavHashLink>
+            <NavHashLink smooth to="#contact" onClick={closeMenu}>
+              Contact
+            </NavHashLink>
+            <a href="#" className="button">
+              Resume
+            </a>
+          </Router>
+        </div>
+      )}
+    </>
   );
 }
