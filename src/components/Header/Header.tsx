@@ -1,4 +1,5 @@
-import { Container } from "./styles";
+// import { Container } from "./styles";
+import "../Header/header.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useState } from "react";
@@ -17,7 +18,7 @@ export function Header() {
   }
 
   return (
-    <Container className="header-fixed">
+    <div className="header-fixed">
       <Router>
         <HashLink smooth to="#home" className="logo">
           <span>{"<Kamran "}</span>
@@ -52,7 +53,7 @@ export function Header() {
             Resume
           </a>
         </nav>
-        {/* <div
+        <div
           aria-expanded={isActive ? "true" : "false"}
           aria-haspopup="true"
           aria-label={isActive ? "Close menu" : "Open menu"}
@@ -60,8 +61,8 @@ export function Header() {
           onClick={() => {
             setActive(!isActive);
           }}
-        ></div> */}
+        ></div>
       </Router>
-    </Container>
+    </div>
   );
 }
