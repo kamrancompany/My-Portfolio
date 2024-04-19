@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Container } from "./styles";
+// import { Container } from "./styles";
+import "../About/about.css";
 import kamran from "../../assets/kamran.jpg";
 import myImg from "../../assets/myImg.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -13,7 +14,8 @@ export function About() {
     setHoveredSkill(null);
   };
   return (
-    <Container id="about">
+    // <Container id="about">
+    <div className="about-main" id="about">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
           <h2>About me</h2>
@@ -75,11 +77,7 @@ export function About() {
                     <img
                       src={data.img}
                       alt={data.heading}
-                      style={{
-                        height: "40px",
-                        width: "80px",
-                        marginTop: "5px",
-                      }}
+                      className="skill-img"
                     />
                     <h5 style={{ color: data.backGround }}>{data.heading}</h5>
                     <div className="load-bar">
@@ -95,6 +93,7 @@ export function About() {
                     src={data.img}
                     alt={data.heading}
                     onMouseEnter={() => handleMouseEnter(data.hoverSkills)}
+                    className="skillsImg"
                   />
                 )}
               </ScrollAnimation>
@@ -104,9 +103,10 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
-          <img src={kamran} alt="kamran arshad" />
+          <img src={kamran} alt="kamran arshad" className="DP" />
         </ScrollAnimation>
       </div>
-    </Container>
+    </div>
+    // </Container>
   );
 }
