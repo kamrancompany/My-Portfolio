@@ -9,18 +9,9 @@ export function Experiance() {
       <div>
         <h2>Previous Experiance</h2>
       </div>
-      <div
-        className="projects"
-        style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}
-      >
+      <div className="projects">
         <ScrollAnimation animateIn="flipInX">
-          <div
-            className="project"
-            style={{
-              width: "33rem",
-              textAlign: "justify",
-            }}
-          >
+          <div className="project">
             <header>
               <div>
                 <img
@@ -62,13 +53,7 @@ export function Experiance() {
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="flipInX">
-          <div
-            className="project"
-            style={{
-              width: "33rem",
-              textAlign: "justify",
-            }}
-          >
+          <div className="project">
             <header>
               <div>
                 <img
