@@ -31,6 +31,7 @@ export const Container = styled.div`
       flex-direction: column;
       height: 100%;
       color: #fff;
+      text-align: justify;
       &:hover {
         transform: translateY(-5px);
         background-color: var(--pink);
