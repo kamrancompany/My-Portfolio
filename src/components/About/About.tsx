@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Container } from "./styles";
 import "../About/about.css";
 import kamran from "../../assets/kamran.jpg";
 import myImg from "../../assets/myImg.jpg";
@@ -14,7 +13,6 @@ export function About() {
     setHoveredSkill(null);
   };
   return (
-    // <Container id="about">
     <div className="about-main" id="about">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
@@ -107,6 +105,5 @@ export function About() {
         </ScrollAnimation>
       </div>
     </div>
-    // </Container>
   );
 }
