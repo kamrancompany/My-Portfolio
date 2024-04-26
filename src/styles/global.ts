@@ -34,13 +34,11 @@ export const GlobalStyle = createGlobalStyle`
           background-color: rgba(555,555,555,0);
         }
       }
-
       footer.footer{
         transition: 0.5s;
         background-color: rgba(0,0,0,0.1);
         color: var(--black);
       }
-
       form{
         input,textarea{
           transition: 0.5s;
@@ -115,4 +113,4 @@ export const GlobalStyle = createGlobalStyle`
     //   color: var(--green);
     // }
   }
-`
+`;
