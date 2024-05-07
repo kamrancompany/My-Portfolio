@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../About/about.css";
 import kamran from "../../assets/kamran.jpg";
-import myImg from "../../assets/myImg.jpg";
+// import myImg from "../../assets/myImg.jpg";
+import myImg from "../../assets/profile.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { skills } from "../../constants/skills";
 export function About() {
@@ -101,7 +102,7 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
-          <img src={kamran} alt="kamran arshad" className="DP" />
+          <img src={myImg} alt="kamran arshad" className="DP" />
         </ScrollAnimation>
       </div>
     </div>
