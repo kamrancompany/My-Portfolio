@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../About/about.css";
-import kamran from "../../assets/kamran.jpg";
-// import myImg from "../../assets/myImg.jpg";
 import myImg from "../../assets/profile.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { skills } from "../../constants/skills";
